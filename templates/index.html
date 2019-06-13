@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %} ApiGame - Fortnite {% endblock %}
+
+<!-- Header -->
+  <div id="header">
+
+    <div class="top">
+
+      <!-- Logo -->
+        <div id="logo">
+          <span class="image avatar48"><img src="../static/images/logo.jpg" alt="" /></span>
+          <h1 id="title"></h1>
+          <p> </p>
+        </div>
+
+{% block content %}
+    <form action="/" method="POST">
+      <label>Usuario</label>
+      <input type="text" name="user" size="50"/>
+      <input type="submit" name="Buscar" value="Buscar"/>
+    </form>
+{% endblock %}
