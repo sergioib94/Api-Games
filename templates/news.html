@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %} ApiGame - Fortnite {% endblock %}
+
+<!-- Header -->
+  <div id="header">
+
+    <div class="top">
+
+      <!-- Logo -->
+        <div id="logo">
+          <span class="image avatar48"><img src="../static/images/logo.jpg" alt="" /></span>
+          <h1 id="title"></h1>
+          <p> </p>
+        </div>
+
+{% block content %}
+  <section id="portfolio" class="two">
+    <div class="container">
+      <div class="row">
+			  <div class="col-4 col-12-mobile">
+          <h3>News</h3>
+          {% for i in news %}
+            <br> {{ i['title'] }}</br>
+            <img src="{{ i['image'] }}" alt=" " height="250" width="300">
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
