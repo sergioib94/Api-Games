@@ -328,7 +328,6 @@ input, select, textarea {
 		}
 
 		.row > .col-4 {
-			width: 33.33333%;
 		}
 
 		.row > .off-4 {
@@ -1615,6 +1614,8 @@ input, select, textarea {
 				}
 
 				.row > .col-12-mobile {
+					display: inline-block;
+	 				font-size: inherit;
 					width: 100%;
 				}
 
@@ -1788,7 +1789,8 @@ input, select, textarea {
 
 			.image.centered img {
 				margin: 0 auto;
-				width: auto;
+				width: 20%;
+				height: 20%
 			}
 
 /* List */
